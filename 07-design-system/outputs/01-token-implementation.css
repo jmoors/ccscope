@@ -1,0 +1,298 @@
+/**
+ * Pavilion Design System — Token Implementation
+ * Version: 1.0
+ * Date: 2026-04-19
+ * Source: 05-brand-identity/outputs/08-design-tokens.json (Agent 5)
+ * Consumer: Agent 9 (Engineering)
+ *
+ * DO NOT EDIT — this file is generated from the token source.
+ * Changes require Agent 5 sign-off → version bump → re-generate.
+ *
+ * Usage pattern:
+ *   - Import this file before all other stylesheets
+ *   - Reference tokens via var(--color-primary-forest) etc.
+ *   - Tailwind v4 theme overrides use @theme block below
+ */
+
+/* ─────────────────────────────────────────────
+   ROOT TOKENS
+   ───────────────────────────────────────────── */
+
+:root {
+
+  /* COLOR — Primary */
+  --color-primary-forest: #0e5c42;
+
+  /* COLOR — Accent */
+  --color-accent-amber:        #8a5c1a;
+  --color-accent-amber-light:  #c97d2e;
+  --color-accent-amber-subtle: #f5ead9;
+
+  /* COLOR — Neutral */
+  --color-neutral-ink:       #1a1a18;
+  --color-neutral-slate:     #484844;
+  --color-neutral-dust:      #6e6e6a;
+  --color-neutral-stone:     #d5d5cf;
+  --color-neutral-parchment: #f7f6f4;
+  --color-neutral-white:     #ffffff;
+
+  /* COLOR — Semantic */
+  --color-error-text:    #b91c1c;
+  --color-error-surface: #fef2f2;
+  --color-focus:         #0e5c42;
+
+  /* COLOR — Trust badge fills */
+  --color-trust-new:         #6e6e6a;
+  --color-trust-reliable:    #0e5c42;
+  --color-trust-established: #8a5c1a;
+
+  /* TYPOGRAPHY — Font families */
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  /* TYPOGRAPHY — Font weights */
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+
+  /* TYPOGRAPHY — Font sizes */
+  --font-size-xs:      0.75rem;    /* 12px */
+  --font-size-sm:      0.875rem;   /* 14px */
+  --font-size-base:    1rem;       /* 16px */
+  --font-size-lg:      1.25rem;    /* 20px */
+  --font-size-xl:      1.5rem;     /* 24px */
+  --font-size-2xl:     2rem;       /* 32px */
+  --font-size-3xl:     2.5rem;     /* 40px */
+  --font-size-display: 3.5rem;     /* 56px */
+
+  /* TYPOGRAPHY — Line heights */
+  --line-height-tight:   1.2;
+  --line-height-snug:    1.35;
+  --line-height-normal:  1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose:   1.8;
+
+  /* TYPOGRAPHY — Letter spacing */
+  --letter-spacing-tight:   -0.01em;
+  --letter-spacing-normal:  0;
+  --letter-spacing-wide:    0.04em;
+  --letter-spacing-widest:  0.08em;
+
+  /* SPACING — 4px base unit */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* BORDER RADIUS */
+  --radius-none:    0px;
+  --radius-sm:      4px;
+  --radius-md:      6px;
+  --radius-lg:      8px;
+  --radius-pill:    9999px;
+  --radius-icon-sm: 6px;
+  --radius-icon-lg: 18px;
+
+  /* BORDER */
+  --border-width-default: 1px;
+  --border-width-focus:   3px;
+  --border-style-default: solid;
+
+  /* SHADOW */
+  --shadow-sm: 0 1px 3px 0 rgba(26,26,24,0.10), 0 1px 2px -1px rgba(26,26,24,0.10);
+  --shadow-md: 0 4px 6px -1px rgba(26,26,24,0.10), 0 2px 4px -2px rgba(26,26,24,0.10);
+
+  /* LAYOUT */
+  --layout-sidebar-width:   240px;
+  --layout-content-max:     1200px;
+  --layout-tap-target-min:  44px;
+}
+
+
+/* ─────────────────────────────────────────────
+   SEMANTIC ALIASES
+   Preferred over raw tokens in component code.
+   ───────────────────────────────────────────── */
+
+:root {
+  /* Text colours */
+  --text-primary:   var(--color-neutral-ink);
+  --text-secondary: var(--color-neutral-slate);
+  --text-tertiary:  var(--color-neutral-dust);
+  --text-inverse:   var(--color-neutral-white);
+  --text-brand:     var(--color-primary-forest);
+  --text-error:     var(--color-error-text);
+
+  /* Surface colours */
+  --surface-base:    var(--color-neutral-white);
+  --surface-subtle:  var(--color-neutral-parchment);
+  --surface-error:   var(--color-error-surface);
+  --surface-brand:   var(--color-primary-forest);
+
+  /* Border colours */
+  --border-default: var(--color-neutral-stone);
+  --border-focus:   var(--color-focus);
+  --border-error:   var(--color-error-text);
+
+  /* Interactive states */
+  --interactive-primary:       var(--color-primary-forest);
+  --interactive-primary-hover: #0a4c37;  /* Forest darkened ~8% */
+  --interactive-primary-active:#073d2c;  /* Forest darkened ~16% */
+  --interactive-secondary-border: var(--color-neutral-stone);
+  --interactive-secondary-hover-bg: var(--color-neutral-parchment);
+
+  /* Focus ring — WCAG 2.2 SC 2.4.11 */
+  --focus-ring: var(--border-width-focus) var(--border-style-default) var(--color-focus);
+  --focus-ring-offset: 3px;
+}
+
+
+/* ─────────────────────────────────────────────
+   BASE STYLES
+   ───────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-primary);
+  background-color: var(--surface-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus management — WCAG 2.2 SC 2.4.11 */
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+/* ─────────────────────────────────────────────
+   TYPE SCALE
+   ───────────────────────────────────────────── */
+
+.type-display {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.type-h1 {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-snug);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.type-h2 {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-snug);
+}
+
+.type-h3 {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+}
+
+.type-lead {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+}
+
+.type-body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+}
+
+.type-caption {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--text-tertiary);
+}
+
+.type-label {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+}
+
+.type-badge {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+}
+
+
+/* ─────────────────────────────────────────────
+   TAILWIND v4 THEME OVERRIDE
+   Use in tailwind.config.css (v4 @theme block)
+   ───────────────────────────────────────────── */
+
+/*
+@theme {
+  --color-forest:         #0e5c42;
+  --color-amber:          #8a5c1a;
+  --color-amber-light:    #c97d2e;
+  --color-amber-subtle:   #f5ead9;
+  --color-ink:            #1a1a18;
+  --color-slate:          #484844;
+  --color-dust:           #6e6e6a;
+  --color-stone:          #d5d5cf;
+  --color-parchment:      #f7f6f4;
+  --color-error:          #b91c1c;
+  --color-error-surface:  #fef2f2;
+
+  --font-serif:           'Source Serif 4', Georgia, serif;
+  --font-sans:            'Source Sans 3', system-ui, sans-serif;
+
+  --radius-sm:    4px;
+  --radius-md:    6px;
+  --radius-lg:    8px;
+  --radius-pill:  9999px;
+
+  --shadow-sm: 0 1px 3px 0 rgba(26,26,24,0.10), 0 1px 2px -1px rgba(26,26,24,0.10);
+  --shadow-md: 0 4px 6px -1px rgba(26,26,24,0.10), 0 2px 4px -2px rgba(26,26,24,0.10);
+}
+*/

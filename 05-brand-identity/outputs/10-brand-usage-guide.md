@@ -6,7 +6,7 @@
 
 ## Identity elements
 
-**Wordmark:** "Pavilion" · Source Serif 4 Medium · Forest `#1d3a2b` · see `05-logo-primary.svg`
+**Wordmark:** "Pavilion" · Source Serif 4 Medium · Forest `#0e5c42` · see `05-logo-primary.svg`
 **Monogram:** P letterform · Forest on white, or white on Forest rounded square · see `06-logo-monogram.svg`
 **Favicon:** P in white on Forest rounded square, 32×32 reference · see `07-favicon.svg`
 
@@ -16,7 +16,7 @@
 
 | Name | Hex | Use |
 |------|-----|-----|
-| Forest (primary) | `#1d3a2b` | Brand colour. Headers, primary buttons, wordmark, trust badge: Reliable. |
+| Forest (primary) | `#0e5c42` | Brand colour. Headers, primary buttons, wordmark, trust badge: Reliable. |
 | Amber (accent text) | `#8a5c1a` | Accent. Links on white, trust badge: Established. Passes WCAG AA on white. |
 | Amber Light (decorative) | `#c97d2e` | Borders, badge backgrounds, large icons only. Never for normal body text on white. |
 | Ink | `#1a1a18` | All body text. |

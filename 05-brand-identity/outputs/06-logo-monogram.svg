@@ -7,7 +7,7 @@
     For light-context use (no background), remove rect and change fill to #1d3a2b.
     NOTE: Convert text to paths before production distribution.
   -->
-  <rect width="80" height="80" rx="18" ry="18" fill="#1d3a2b"/>
+  <rect width="80" height="80" rx="18" ry="18" fill="#0e5c42"/>
   <text
     x="16"
     y="64"

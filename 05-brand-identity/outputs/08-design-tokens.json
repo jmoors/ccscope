@@ -12,9 +12,9 @@
     "$description": "All colour tokens. Chromatic (primary, accent), neutrals, semantic.",
     "primary": {
       "forest": {
-        "$value": "#1d3a2b",
+        "$value": "#0e5c42",
         "$type": "color",
-        "$description": "Primary brand colour. Deep forest green. On white: 12.5:1. WCAG AAA."
+        "$description": "Primary brand colour. Vibrant forest green. On white: 8.0:1. WCAG AAA."
       }
     },
     "accent": {
@@ -78,9 +78,9 @@
         "$description": "Error state background. Use Ink or error-text for text on this surface."
       },
       "focus": {
-        "$value": "#1d3a2b",
+        "$value": "#0e5c42",
         "$type": "color",
-        "$description": "Focus ring colour (same as primary). 3px solid, 3px offset. WCAG 2.2 SC 2.4.11 compliant."
+        "$description": "Focus ring colour (same as primary). 3px solid, 3px offset. WCAG 2.2 SC 2.4.11 compliant. On white: 8.0:1."
       }
     },
     "trust-badge": {
@@ -90,9 +90,9 @@
         "$description": "Trust badge: New. Same as neutral.dust. Text on badge: white (#ffffff). Contrast: 5.1:1."
       },
       "reliable": {
-        "$value": "#1d3a2b",
+        "$value": "#0e5c42",
         "$type": "color",
-        "$description": "Trust badge: Reliable. Same as primary.forest. Text on badge: white (#ffffff). Contrast: 12.5:1."
+        "$description": "Trust badge: Reliable. Same as primary.forest. Text on badge: white (#ffffff). Contrast: 8.0:1."
       },
       "established": {
         "$value": "#8a5c1a",

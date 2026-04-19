@@ -43,7 +43,7 @@ Nothing in these deliverables comes from the above list. No rationale is needed.
 
 **Why deep forest green as primary:**
 - Cricket's institutional environment is the ground — not the kit, not the scoreboard. The outfield is green. The pavilion sits on green. This reference is environmental, not playing-equipment-nostalgic.
-- Deep forest green (#1d3a2b) is dark enough to read as authority, not as a sports brand. It is not the National Trust's specific green (avoiding confusion), not England cricket blue (avoiding franchise association), not startup teal (wrong register).
+- Deep forest green (#0e5c42) is dark enough to read as authority, not as a sports brand. It is not the National Trust's specific green (avoiding confusion), not England cricket blue (avoiding franchise association), not startup teal (wrong register).
 - All text on this colour passes WCAG 2.2 AAA.
 
 **Why deep amber as accent:**

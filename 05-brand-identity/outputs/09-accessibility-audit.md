@@ -21,8 +21,8 @@ Contrast ratios calculated using the WCAG 2.x relative luminance formula. Lumina
 
 | Foreground | L | Background | L | Ratio | AA Normal (4.5:1) | AA Large (3:1) | AAA (7:1) |
 |---|---|---|---|---|---|---|---|
-| Forest `#1d3a2b` | 0.032 | White `#ffffff` | 1.000 | **12.5:1** | ✓ Pass | ✓ Pass | ✓ Pass |
-| White `#ffffff` | 1.000 | Forest `#1d3a2b` | 0.032 | **12.5:1** | ✓ Pass | ✓ Pass | ✓ Pass |
+| Forest `#0e5c42` | 0.081 | White `#ffffff` | 1.000 | **8.0:1** | ✓ Pass | ✓ Pass | ✓ Pass |
+| White `#ffffff` | 1.000 | Forest `#0e5c42` | 0.081 | **8.0:1** | ✓ Pass | ✓ Pass | ✓ Pass |
 | Amber `#8a5c1a` | 0.125 | White `#ffffff` | 1.000 | **5.5:1** | ✓ Pass | ✓ Pass | ✗ Fail |
 | White `#ffffff` | 1.000 | Amber `#8a5c1a` | 0.125 | **5.5:1** | ✓ Pass | ✓ Pass | ✗ Fail |
 | Amber Light `#c97d2e` | 0.273 | White `#ffffff` | 1.000 | **3.25:1** | ✗ Fail | ✓ Pass | ✗ Fail |
@@ -45,13 +45,13 @@ Contrast ratios calculated using the WCAG 2.x relative luminance formula. Lumina
 |---|---|---|---|---|---|---|---|
 | Ink `#1a1a18` | 0.014 | Parchment `#f7f6f4` | 0.910 | **14.7:1** | ✓ Pass | ✓ Pass | ✓ Pass |
 | Slate `#484844` | 0.065 | Parchment `#f7f6f4` | 0.910 | **7.9:1** | ✓ Pass | ✓ Pass | ✓ Pass |
-| Forest `#1d3a2b` | 0.032 | Parchment `#f7f6f4` | 0.910 | **11.0:1** | ✓ Pass | ✓ Pass | ✓ Pass |
+| Forest `#0e5c42` | 0.081 | Parchment `#f7f6f4` | 0.910 | **7.3:1** | ✓ Pass | ✓ Pass | ✓ Pass |
 
 ### Amber Subtle surface pairings
 
 | Foreground | L | Background | L | Ratio | AA Normal | AA Large | AAA |
 |---|---|---|---|---|---|---|---|
-| Forest `#1d3a2b` | 0.032 | Amber Subtle `#f5ead9` | 0.831 | **11.0:1** | ✓ Pass | ✓ Pass | ✓ Pass |
+| Forest `#0e5c42` | 0.081 | Amber Subtle `#f5ead9` | 0.831 | **6.7:1** | ✓ Pass | ✓ Pass | ✗ Fail |
 | Ink `#1a1a18` | 0.014 | Amber Subtle `#f5ead9` | 0.831 | **13.8:1** | ✓ Pass | ✓ Pass | ✓ Pass |
 
 ### Semantic / error pairings
@@ -66,7 +66,7 @@ Contrast ratios calculated using the WCAG 2.x relative luminance formula. Lumina
 | Foreground | L | Background | L | Ratio | AA Normal | Notes |
 |---|---|---|---|---|---|---|
 | White `#ffffff` | 1.000 | New `#6e6e6a` | 0.155 | **5.1:1** | ✓ Pass | New badge |
-| White `#ffffff` | 1.000 | Reliable `#1d3a2b` | 0.032 | **12.5:1** | ✓ Pass | Reliable badge |
+| White `#ffffff` | 1.000 | Reliable `#0e5c42` | 0.081 | **8.0:1** | ✓ Pass | Reliable badge |
 | White `#ffffff` | 1.000 | Established `#8a5c1a` | 0.125 | **5.5:1** | ✓ Pass | Established badge |
 
 ---
@@ -76,8 +76,8 @@ Contrast ratios calculated using the WCAG 2.x relative luminance formula. Lumina
 **Requirement:** Focus indicator must have a perimeter of at least the perimeter of the unfocused component, with a contrast ratio of at least 3:1 between focused and unfocused states, and against adjacent colours.
 
 **Implementation specified:**
-- Focus ring: 3px solid Forest `#1d3a2b`, offset 3px from component edge
-- On white background: Forest vs White = 12.5:1 ✓ (exceeds 3:1)
+- Focus ring: 3px solid Forest `#0e5c42`, offset 3px from component edge
+- On white background: Forest vs White = 8.0:1 ✓ (exceeds 3:1)
 - On Parchment background: Forest vs Parchment = 11.0:1 ✓
 
 Result: **Pass** for all light backgrounds in the system.

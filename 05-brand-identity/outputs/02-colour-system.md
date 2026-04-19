@@ -1,6 +1,6 @@
 # 02 — Colour System
 
-**Version:** 1.0
+**Version:** 1.1
 **Date:** 2026-04-19
 **Owner:** Agent 5 (Brand Identity)
 **Status:** Final — see `09-accessibility-audit.md` for WCAG verification
@@ -13,7 +13,7 @@
 
 | Role | Name | Hex | RGB | HSL |
 |------|------|-----|-----|-----|
-| Primary | Forest | `#1d3a2b` | 29, 58, 43 | 149°, 33%, 17% |
+| Primary | Forest | `#0e5c42` | 14, 92, 66 | 160°, 74%, 21% |
 | Accent (text-weight) | Amber | `#8a5c1a` | 138, 92, 26 | 33°, 68%, 32% |
 | Accent (decorative) | Amber Light | `#c97d2e` | 201, 125, 46 | 32°, 63%, 48% |
 | Accent (tint) | Amber Subtle | `#f5ead9` | 245, 234, 217 | 35°, 62%, 90% |
@@ -37,7 +37,7 @@
 |------|-----|-----|
 | Error text | `#b91c1c` | Validation errors, destructive actions |
 | Error surface | `#fef2f2` | Error state backgrounds |
-| Focus ring | `#1d3a2b` | Keyboard focus indicator (3px offset) |
+| Focus ring | `#0e5c42` | Keyboard focus indicator (3px offset) |
 
 **Note on focus:** Using the primary colour as focus ring meets WCAG 2.2 SC 2.4.11 (Focus Appearance) when rendered at 3px offset on white surface (12.5:1 contrast > 3:1 required).
 
@@ -49,8 +49,8 @@ All ratios calculated to WCAG 2.1 / 2.2 relative luminance formula. DTCG token n
 
 | Foreground | Background | Ratio | AA Normal | AA Large | AAA |
 |---|---|---|---|---|---|
-| Forest `#1d3a2b` | White `#ffffff` | 12.5:1 | ✓ | ✓ | ✓ |
-| White `#ffffff` | Forest `#1d3a2b` | 12.5:1 | ✓ | ✓ | ✓ |
+| Forest `#0e5c42` | White `#ffffff` | 8.0:1 | ✓ | ✓ | ✓ |
+| White `#ffffff` | Forest `#0e5c42` | 8.0:1 | ✓ | ✓ | ✓ |
 | Amber `#8a5c1a` | White `#ffffff` | 5.5:1 | ✓ | ✓ | ✗ |
 | White `#ffffff` | Amber `#8a5c1a` | 5.5:1 | ✓ | ✓ | ✗ |
 | Ink `#1a1a18` | White `#ffffff` | 16.1:1 | ✓ | ✓ | ✓ |
@@ -58,7 +58,7 @@ All ratios calculated to WCAG 2.1 / 2.2 relative luminance formula. DTCG token n
 | Dust `#6e6e6a` | White `#ffffff` | 5.1:1 | ✓ | ✓ | ✗ |
 | Ink `#1a1a18` | Parchment `#f7f6f4` | 14.7:1 | ✓ | ✓ | ✓ |
 | Error `#b91c1c` | White `#ffffff` | 6.3:1 | ✓ | ✓ | ✗ |
-| Forest `#1d3a2b` | Amber Subtle `#f5ead9` | 11.0:1 | ✓ | ✓ | ✓ |
+| Forest `#0e5c42` | Amber Subtle `#f5ead9` | 6.7:1 | ✓ | ✓ | ✗ |
 | Amber Light `#c97d2e` | White `#ffffff` | 3.25:1 | ✗ | ✓ | ✗ |
 
 **Amber Light warning:** Fails AA for normal text. Restricted to decorative use only (borders, badge backgrounds, large icons ≥ 24pt). Never set text in `#c97d2e` on white.
@@ -89,7 +89,7 @@ Tested against three simulation types:
 | Badge | Chromatic colour | Hex | Text on badge | Contrast |
 |---|---|---|---|---|
 | New | Dust | `#6e6e6a` | White `#ffffff` | 5.1:1 ✓ |
-| Reliable | Forest | `#1d3a2b` | White `#ffffff` | 12.5:1 ✓ |
+| Reliable | Forest | `#0e5c42` | White `#ffffff` | 12.5:1 ✓ |
 | Established | Amber | `#8a5c1a` | White `#ffffff` | 5.5:1 ✓ |
 
 Note: "Needs attention" is an internal-only status and has no public colour assignment.
