@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Pavilion">
+  <!--
+    Pavilion favicon
+    Version: 1.0 | Agent 5 (Brand Identity)
+    Background: Forest #1d3a2b | Foreground: white
+    Corner radius: 6px (18.75% of 32px width)
+    NOTE: For production, convert text to paths. Font: Source Serif 4 Medium.
+  -->
+  <rect width="32" height="32" rx="6" ry="6" fill="#1d3a2b"/>
+  <text
+    x="8"
+    y="25"
+    font-family="'Source Serif 4', Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="500"
+    fill="#ffffff"
+    letter-spacing="0"
+  >P</text>
+</svg>

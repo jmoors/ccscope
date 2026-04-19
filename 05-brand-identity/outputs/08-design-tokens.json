@@ -1,0 +1,274 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$metadata": {
+    "version": "1.0",
+    "date": "2026-04-19",
+    "owner": "Agent 5 (Brand Identity)",
+    "consumer": "Agent 7 (Design System & Screen Design)",
+    "format": "W3C Design Tokens Community Group (DTCG)",
+    "notes": "These are the canonical brand tokens. Agent 7 consumes this file. Changes to this file go through Agent 5 → Agent 7 sign-off → version bump. Do not edit downstream copies."
+  },
+  "color": {
+    "$description": "All colour tokens. Chromatic (primary, accent), neutrals, semantic.",
+    "primary": {
+      "forest": {
+        "$value": "#1d3a2b",
+        "$type": "color",
+        "$description": "Primary brand colour. Deep forest green. On white: 12.5:1. WCAG AAA."
+      }
+    },
+    "accent": {
+      "amber": {
+        "$value": "#8a5c1a",
+        "$type": "color",
+        "$description": "Accent — text-weight amber. On white: 5.5:1. WCAG AA. Use for text, icons, badge fills."
+      },
+      "amber-light": {
+        "$value": "#c97d2e",
+        "$type": "color",
+        "$description": "Accent — decorative amber. On white: 3.25:1. WCAG AA large only. Never use for normal-size text on white."
+      },
+      "amber-subtle": {
+        "$value": "#f5ead9",
+        "$type": "color",
+        "$description": "Accent tint — background use only. Use Forest or Ink for text on this surface."
+      }
+    },
+    "neutral": {
+      "ink": {
+        "$value": "#1a1a18",
+        "$type": "color",
+        "$description": "Text primary. Near-black with slight warm cast. On white: 16.1:1. WCAG AAA."
+      },
+      "slate": {
+        "$value": "#484844",
+        "$type": "color",
+        "$description": "Text secondary. Body copy on light surfaces. On white: 8.4:1. WCAG AA."
+      },
+      "dust": {
+        "$value": "#6e6e6a",
+        "$type": "color",
+        "$description": "Text tertiary. Captions, metadata. On white: 5.1:1. WCAG AA."
+      },
+      "stone": {
+        "$value": "#d5d5cf",
+        "$type": "color",
+        "$description": "Border colour. Input borders, dividers. Not for text use."
+      },
+      "parchment": {
+        "$value": "#f7f6f4",
+        "$type": "color",
+        "$description": "Subtle surface. Card backgrounds, alternating row fills. Not for text use."
+      },
+      "white": {
+        "$value": "#ffffff",
+        "$type": "color",
+        "$description": "Base page background."
+      }
+    },
+    "semantic": {
+      "error-text": {
+        "$value": "#b91c1c",
+        "$type": "color",
+        "$description": "Validation errors, destructive action labels. On white: 6.3:1. WCAG AA."
+      },
+      "error-surface": {
+        "$value": "#fef2f2",
+        "$type": "color",
+        "$description": "Error state background. Use Ink or error-text for text on this surface."
+      },
+      "focus": {
+        "$value": "#1d3a2b",
+        "$type": "color",
+        "$description": "Focus ring colour (same as primary). 3px solid, 3px offset. WCAG 2.2 SC 2.4.11 compliant."
+      }
+    },
+    "trust-badge": {
+      "new": {
+        "$value": "#6e6e6a",
+        "$type": "color",
+        "$description": "Trust badge: New. Same as neutral.dust. Text on badge: white (#ffffff). Contrast: 5.1:1."
+      },
+      "reliable": {
+        "$value": "#1d3a2b",
+        "$type": "color",
+        "$description": "Trust badge: Reliable. Same as primary.forest. Text on badge: white (#ffffff). Contrast: 12.5:1."
+      },
+      "established": {
+        "$value": "#8a5c1a",
+        "$type": "color",
+        "$description": "Trust badge: Established. Same as accent.amber. Text on badge: white (#ffffff). Contrast: 5.5:1."
+      }
+    }
+  },
+  "typography": {
+    "$description": "All typography tokens. Two typefaces: Source Serif 4 (brand/headings), Source Sans 3 (UI/body).",
+    "font-family": {
+      "serif": {
+        "$value": "'Source Serif 4', Georgia, 'Times New Roman', serif",
+        "$type": "fontFamily",
+        "$description": "Primary brand typeface. Headings, wordmark. SIL OFL 1.1 licence."
+      },
+      "sans": {
+        "$value": "'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+        "$type": "fontFamily",
+        "$description": "UI typeface. Body, labels, functional text. SIL OFL 1.1 licence."
+      }
+    },
+    "font-weight": {
+      "regular": {
+        "$value": 400,
+        "$type": "fontWeight",
+        "$description": "Regular. Body copy."
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "fontWeight",
+        "$description": "Medium. Subheadings, labels, wordmark."
+      },
+      "semibold": {
+        "$value": 600,
+        "$type": "fontWeight",
+        "$description": "SemiBold. H1, emphasis. Maximum weight in system — do not use bold (700)."
+      }
+    },
+    "font-size": {
+      "xs": {
+        "$value": "12px",
+        "$type": "dimension",
+        "$description": "0.75rem. Legal, fine print."
+      },
+      "sm": {
+        "$value": "14px",
+        "$type": "dimension",
+        "$description": "0.875rem. Captions, metadata, small labels."
+      },
+      "base": {
+        "$value": "16px",
+        "$type": "dimension",
+        "$description": "1rem. Body copy baseline."
+      },
+      "lg": {
+        "$value": "20px",
+        "$type": "dimension",
+        "$description": "1.25rem. Lead text, subheadings."
+      },
+      "xl": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "1.5rem. H3."
+      },
+      "2xl": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "2rem. H2."
+      },
+      "3xl": {
+        "$value": "40px",
+        "$type": "dimension",
+        "$description": "2.5rem. H1."
+      },
+      "display": {
+        "$value": "56px",
+        "$type": "dimension",
+        "$description": "3.5rem. Display / marketing. Rarely used in product."
+      }
+    },
+    "line-height": {
+      "tight": {
+        "$value": 1.2,
+        "$type": "number",
+        "$description": "Display and large headings."
+      },
+      "snug": {
+        "$value": 1.35,
+        "$type": "number",
+        "$description": "H1, H2."
+      },
+      "normal": {
+        "$value": 1.5,
+        "$type": "number",
+        "$description": "H3, subheadings."
+      },
+      "relaxed": {
+        "$value": 1.6,
+        "$type": "number",
+        "$description": "Body copy."
+      },
+      "loose": {
+        "$value": 1.8,
+        "$type": "number",
+        "$description": "Long-form prose."
+      }
+    },
+    "letter-spacing": {
+      "tight": {
+        "$value": "-0.01em",
+        "$type": "dimension",
+        "$description": "Display headings."
+      },
+      "normal": {
+        "$value": "0",
+        "$type": "dimension",
+        "$description": "Body text default."
+      },
+      "wide": {
+        "$value": "0.04em",
+        "$type": "dimension",
+        "$description": "Wordmark tracking."
+      },
+      "widest": {
+        "$value": "0.08em",
+        "$type": "dimension",
+        "$description": "Uppercase badge labels, status chips."
+      }
+    }
+  },
+  "spacing": {
+    "$description": "Spacing scale. Base unit: 4px. Used for padding, margin, gap. Agent 7 may extend this scale but must not modify base values.",
+    "1": { "$value": "4px", "$type": "dimension" },
+    "2": { "$value": "8px", "$type": "dimension" },
+    "3": { "$value": "12px", "$type": "dimension" },
+    "4": { "$value": "16px", "$type": "dimension" },
+    "5": { "$value": "20px", "$type": "dimension" },
+    "6": { "$value": "24px", "$type": "dimension" },
+    "8": { "$value": "32px", "$type": "dimension" },
+    "10": { "$value": "40px", "$type": "dimension" },
+    "12": { "$value": "48px", "$type": "dimension" },
+    "16": { "$value": "64px", "$type": "dimension" },
+    "20": { "$value": "80px", "$type": "dimension" },
+    "24": { "$value": "96px", "$type": "dimension" }
+  },
+  "border-radius": {
+    "$description": "Corner radius values. No gradients. No decorative curves.",
+    "none": { "$value": "0px", "$type": "dimension", "$description": "Sharp corners. Tables, data-dense UI." },
+    "sm": { "$value": "4px", "$type": "dimension", "$description": "Tags, chips, small badges." },
+    "md": { "$value": "6px", "$type": "dimension", "$description": "Buttons, inputs, cards." },
+    "lg": { "$value": "8px", "$type": "dimension", "$description": "Modal dialogs, larger containers." },
+    "pill": { "$value": "9999px", "$type": "dimension", "$description": "Trust badges, status pills." },
+    "icon-sm": { "$value": "6px", "$type": "dimension", "$description": "Favicon container (32px)." },
+    "icon-lg": { "$value": "18px", "$type": "dimension", "$description": "App icon container (80px)." }
+  },
+  "border": {
+    "width": {
+      "default": { "$value": "1px", "$type": "dimension" },
+      "focus": { "$value": "3px", "$type": "dimension", "$description": "Focus ring width. WCAG 2.2 SC 2.4.11." }
+    },
+    "style": {
+      "default": { "$value": "solid", "$type": "string" }
+    }
+  },
+  "shadow": {
+    "$description": "No decorative shadows. Only functional elevation for layered UI (modals, dropdowns).",
+    "sm": {
+      "$value": "0 1px 3px 0 rgba(26,26,24,0.10), 0 1px 2px -1px rgba(26,26,24,0.10)",
+      "$type": "shadow",
+      "$description": "Dropdown menus, tooltips."
+    },
+    "md": {
+      "$value": "0 4px 6px -1px rgba(26,26,24,0.10), 0 2px 4px -2px rgba(26,26,24,0.10)",
+      "$type": "shadow",
+      "$description": "Modal dialogs."
+    }
+  }
+}

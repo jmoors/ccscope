@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" role="img" aria-label="Pavilion">
+  <!--
+    Pavilion P monogram — app icon version
+    Version: 1.0 | Agent 5 (Brand Identity)
+    Background: Forest #1d3a2b | Foreground: white
+    Corner radius: 18px (22.5% of 80px — matches iOS/Android icon rounding)
+    For light-context use (no background), remove rect and change fill to #1d3a2b.
+    NOTE: Convert text to paths before production distribution.
+  -->
+  <rect width="80" height="80" rx="18" ry="18" fill="#1d3a2b"/>
+  <text
+    x="16"
+    y="64"
+    font-family="'Source Serif 4', Georgia, 'Times New Roman', serif"
+    font-size="56"
+    font-weight="500"
+    fill="#ffffff"
+    letter-spacing="0"
+  >P</text>
+</svg>
